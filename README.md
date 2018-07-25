@@ -1,24 +1,49 @@
-# README
+# README #
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Summary ###
 
-Things you may want to cover:
+Our new TopHouse website!
 
-* Ruby version
+*Current Version: 0.0.1 - planned improvements are at the bottom of this readme!*
 
-* System dependencies
+#### What's New ####
 
-* Configuration
+#####0.0.1 #####
++ Added README
++ Added blank Ruby on Rails project structure
 
-* Database creation
+### Dependencies ###
 
-* Database initialization
+1. Ruby on Rails
+2. {{{ADD MORE}}}
 
-* How to run the test suite
+### Setup ###
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Install Ruby, Ruby on Rails, yarn, etc...
+2. type *bundle* into console
 
-* Deployment instructions
 
-* ...
+### Run - There are now three different ways to run this program!###
+
+1. Type rails s
+2. Navigate to **localhost:3000** in your favorite web browser
+
+### Troubleshooting ###
++ If the app doesn't run:
+    1. Begin the postgresql server
+      * (for wm, type *brew services start postgresql@9.6*)
+
+
+### Upcoming Changes ###
+
+##### Top Priority #####
++ More to come!
+
+##### Medium Priority #####
++ More to come!
+
+##### Code Refactoring #####
++ More to come!
+
+##### Low Priority #####
++ More to come!
