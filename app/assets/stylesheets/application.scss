@@ -7,6 +7,10 @@ h1, h2, h3, h4, p {
 
 body { background-color: black; }
 
+.space_maker {
+  height: 85px;
+}
+
 
 // Specific pages styles
 @import "home";
