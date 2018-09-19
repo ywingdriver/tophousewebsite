@@ -1,0 +1,12 @@
+// Overall style
+
+h1, h2, h3, h4, p {
+  color: white;
+  font-family: "Alegreya Sans SC";
+ }
+
+body { background-color: black; }
+
+
+// Specific pages styles
+@import "home";
