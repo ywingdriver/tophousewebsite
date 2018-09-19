@@ -16,4 +16,15 @@
   justify-content: center;
   width: 100%;
   //background-color: purple;
+
+
+  .homepage_pics {
+    border: solid black 5px;
+    transition-timing-function: ease-in-and-out;
+    transition: transform .5s;
+  }
+
+  .homepage_pics:hover {
+    transform: scale(1.02);
+  }
 }
