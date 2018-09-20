@@ -1,2 +1,37 @@
-<h1>Pages#music</h1>
-<p>Find me in app/views/pages/music.html.erb</p>
+
+<div class="music_page_container">
+
+  <div class="header">
+    <%= link_to root_path do %>
+      <%= image_tag("TopHouse_Title.png")  %>
+    <% end %>
+  </div>
+
+  <div class="icons_sidebar">
+    <%= fa_icon "youtube"  %>
+    <%= fa_icon "facebook-square"  %>
+    <%= fa_icon "instagram"  %>
+    <%= fa_icon "twitter"  %>
+  </div>
+
+  <div class="centered_content">
+    <h1 id="subtitle">Music</h1>
+  </div>
+
+  <div class="centered_content">
+    <iframe src="https://open.spotify.com/embed/album/5tsEgg1KxhhYFQt8LL3tOv" width="400" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+    </iframe>
+  </div>
+
+  <div class="centered_content">
+    <iframe width="500" height="380" src="https://www.youtube.com/embed/ZH3F3Cd_3K0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="centered_content">
+    <iframe width="500" height="380" src="https://www.youtube.com/embed/hOTeKSDyJOM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="centered_content">
+    <iframe width="500" height="380" src="https://www.youtube.com/embed/W5Fy7SvEwr0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
