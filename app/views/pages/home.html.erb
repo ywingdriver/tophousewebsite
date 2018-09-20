@@ -1,21 +1,33 @@
 <div class="homepage_container">
-  <div class="homepage_header">
+  <div class="header">
     <%= image_tag("TopHouse_Title.png")  %>
   </div>
 
   <div class="space_maker"></div>
 
   <div class="homepage_body">
-    <div>
-      <h1>Music</h1>
-      <%= image_tag("TopHouse_Jesse.png", class: "homepage_pics")  %><
-    </div>
-    <div>
-      <h1>Shows</h1>
-      <%= image_tag("TopHouse_Joe.png", class: "homepage_pics")  %>
-    </div>
-    <div>
-      <h1>About</h1>
-      <%= image_tag("TopHouse_William.png", class: "homepage_pics")  %></div>
+
+    <%= link_to music_path do %>
+      <div>
+        <h1 id="homepage_link_word_music">Music</h1>
+        <%= image_tag("TopHouse_Jesse.png", class: "homepage_pics")  %>
+      </div>
+    <% end %>
+
+
+    <%= link_to shows_path do  %>
+      <div>
+        <h1 id="homepage_link_word_shows">Shows</h1>
+        <%= image_tag("TopHouse_Joe.png", class: "homepage_pics")  %>
+      </div>
+    <% end %>
+
+    <%= link_to shows_path do  %>
+      <div>
+        <h1 id="homepage_link_word_about">About</h1>
+        <%= image_tag("TopHouse_William.png", class: "homepage_pics")  %>
+      </div>
+    <% end %>
+
   </div>
 </div>
