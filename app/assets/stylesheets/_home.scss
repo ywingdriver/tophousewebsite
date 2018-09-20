@@ -2,6 +2,7 @@
   h1 {
     font-size: 60px;
     font-weight: lighter;
+    text-shadow: 1px 1px 2px black;
   }
 }
 
@@ -20,14 +21,42 @@
   width: 100%;
   //background-color: purple;
 
+  #homepage_link_word_music {
+    position: absolute;
+    top: 335px;
+    left: 240px;
+    z-index: 3;
+  }
+
+  #homepage_link_word_shows {
+    position: absolute;
+    top: 335px;
+    left: 600px;
+    z-index: 3;
+  }
+
+  #homepage_link_word_about {
+    position: absolute;
+    top: 335px;
+    right: 240px;
+    z-index: 3;
+  }
+
 
   .homepage_pics {
+    position: relative;
     border: solid black 5px;
     transition-timing-function: ease-in-and-out;
-    transition: transform .5s;
+    transition: all 0.5s;
   }
 
   .homepage_pics:hover {
     transform: scale(1.02);
+    filter: blur(2px);
+  }
+
+  a {
+    text-decoration: none;
   }
 }
+
