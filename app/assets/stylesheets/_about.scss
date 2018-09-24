@@ -1,0 +1,20 @@
+.bios {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio_card {
+  width: 20%;
+
+
+  h1, h3 {
+    font-weight: lighter;
+  }
+
+  p {
+    color: grey;
+  }
+}
+
