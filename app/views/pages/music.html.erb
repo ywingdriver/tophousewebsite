@@ -8,10 +8,21 @@
   </div>
 
   <div class="icons_sidebar">
-    <%= fa_icon "youtube"  %>
-    <%= fa_icon "facebook-square"  %>
-    <%= fa_icon "instagram"  %>
-    <%= fa_icon "twitter"  %>
+    <%= link_to('https://www.youtube.com/channel/UC65VqSfrkeu5EgZKqhiqvgQ') do %>
+      <%= fa_icon "youtube"  %>
+    <% end %>
+
+    <%= link_to('https://www.facebook.com/tophousetheband/') do %>
+      <%= fa_icon "facebook-square"  %>
+    <% end %>
+
+    <%= link_to('https://www.instagram.com/tophousetheband/?hl=en') do  %>
+      <%= fa_icon "instagram"  %>
+    <% end %>
+
+    <%= link_to('https://twitter.com/tophousetheband') do %>
+      <%= fa_icon "twitter"  %>
+    <% end %>
   </div>
 
   <div class="centered_content">
