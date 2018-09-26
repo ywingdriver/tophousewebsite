@@ -3,6 +3,7 @@
     font-size: 60px;
     font-weight: lighter;
     text-shadow: 1px 1px 2px black;
+    transition: all 0.5s;
   }
 }
 
@@ -12,42 +13,37 @@
   width: 100%;
   //background-color: purple;
 
-  #homepage_link_word_music {
-    position: absolute;
-    top: 335px;
-    left: 240px;
-    z-index: 3;
-  }
-
-  #homepage_link_word_shows {
-    position: absolute;
-    top: 335px;
-    left: 600px;
-    z-index: 3;
-  }
-
-  #homepage_link_word_about {
-    position: absolute;
-    top: 335px;
-    right: 240px;
-    z-index: 3;
-  }
-
-
-  .homepage_pics {
+  .pics {
     position: relative;
     border: solid black 5px;
     transition-timing-function: ease-in-and-out;
+  }
+
+  img {
     transition: all 0.5s;
   }
 
-  .homepage_pics:hover {
+  .pics:hover img {
     transform: scale(1.02);
     filter: blur(2px);
+    opacity: .9;
+  }
+
+  .pics:hover h1 {
+
+    text-shadow: 2px 2px 2px black;
   }
 
   a {
     text-decoration: none;
+  }
+
+
+  .homepage_link_word {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    z-index: 3;
   }
 }
 
