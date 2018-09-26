@@ -3,6 +3,7 @@
     font-size: 60px;
     font-weight: lighter;
     text-shadow: 1px 1px 2px black;
+    transition: all 0.5s;
   }
 }
 
@@ -14,29 +15,35 @@
 
   .pics {
     position: relative;
+    border: solid black 5px;
+    transition-timing-function: ease-in-and-out;
   }
+
+  img {
+    transition: all 0.5s;
+  }
+
+  .pics:hover img {
+    transform: scale(1.02);
+    filter: blur(2px);
+    opacity: .9;
+  }
+
+  .pics:hover h1 {
+
+    text-shadow: 2px 2px 2px black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
 
   .homepage_link_word {
     position: absolute;
     top: 95px;
     left: 100px;
     z-index: 3;
-  }
-
-  .homepage_pics {
-    //position: relative;
-    border: solid black 5px;
-    transition-timing-function: ease-in-and-out;
-    transition: all 0.5s;
-  }
-
-  .homepage_pics:hover {
-    transform: scale(1.02);
-    filter: blur(2px);
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 
