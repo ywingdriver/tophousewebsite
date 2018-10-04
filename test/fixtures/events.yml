@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-10-04
+  start_time: 2018-10-04 08:52:23
+  end_time: 2018-10-04 08:52:23
+  venue: MyString
+  address: MyString
+
+two:
+  date: 2018-10-04
+  start_time: 2018-10-04 08:52:23
+  end_time: 2018-10-04 08:52:23
+  venue: MyString
+  address: MyString
