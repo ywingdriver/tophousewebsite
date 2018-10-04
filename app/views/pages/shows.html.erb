@@ -1,2 +1,39 @@
-<h1>Pages#shows</h1>
-<p>Find me in app/views/pages/shows.html.erb</p>
+<div class="show_page_container">
+  <div class="header">
+    <%= link_to root_path do %>
+      <%= image_tag("TopHouse_Title.png")  %>
+    <% end %>
+  </div>
+
+  <div class="icons_sidebar">
+    <%= link_to('https://www.youtube.com/channel/UC65VqSfrkeu5EgZKqhiqvgQ', target: :_blank) do %>
+      <%= fa_icon "youtube"  %>
+    <% end %>
+
+    <%= link_to('https://www.facebook.com/tophousetheband/', target: :_blank) do %>
+      <%= fa_icon "facebook-square"  %>
+    <% end %>
+
+    <%= link_to('https://www.instagram.com/tophousetheband/?hl=en', target: :_blank) do  %>
+      <%= fa_icon "instagram"  %>
+    <% end %>
+
+    <%= link_to('https://twitter.com/tophousetheband', target: :_blank) do %>
+      <%= fa_icon "twitter"  %>
+    <% end %>
+  </div>
+
+  <div class="centered_content">
+    <h1 id="subtitle">Shows</h1>
+  </div>
+
+  <div class="all_shows">
+    <% @events = Event.all %>
+    <% @events.each do |x| %>
+      <p><%= x.venue %></p>
+    <% end %>
+  </div>
+
+</div>
+
+
