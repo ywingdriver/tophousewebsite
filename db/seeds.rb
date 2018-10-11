@@ -5,13 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Erasing old seeds..."
 Event.delete_all
 
-puts "Creating seeds..."
+puts "Currently #{Event.count} seeds exist."
 
-Event.create(date: Date.new(2018, 10, 31), start_time: 6, end_time: 8, venue: "A Cool Park", address: "123 Cool Park Road")
-Event.create(date: Date.new(2018, 11, 2), start_time: 5, end_time: 7, venue: "Patty's Pleasant Pub", address: "999 Pleasant Place Dr.")
-Event.create(date: Date.new(2018, 11, 6), start_time: 8, end_time: 10, venue: "Sketchy Bar", address: "4321 Dont Drink the Beer St.")
+puts "Creating new seeds..."
+
+Event.create(date: Date.new(2018, 10, 13), start_time: 6, end_time: 8, venue: "Bitterroot Brewing", address: "Hamilton, MT")
+Event.create(date: Date.new(2018, 10, 19), start_time: 6, end_time: 8, venue: "Mineshaft Pasty Co.", address: "Hamilton, MT")
+Event.create(date: Date.new(2018, 10, 20), start_time: 6, end_time: 8, venue: "Fin's Tap House", address: "Corvallis, MT")
+
+Event.create(date: Date.new(2018, 11, 17), start_time: 6, end_time: 8, venue: "Draughtworks", address: "Missoula, MT")
+Event.create(date: Date.new(2018, 12, 14), start_time: 6, end_time: 8, venue: "Highlander", address: "Missoula, MT")
 
 
 puts "#{Event.count} seeds created."
