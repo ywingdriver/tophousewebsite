@@ -30,7 +30,12 @@
   <div class="all_shows">
     <% @events = Event.all %>
     <% @events.each do |x| %>
-      <p><%= x.venue %></p>
+      <div class="one_event">
+        <p><%= x.date.strftime('%B %d')%> --- <%= x.date.strftime('%A')%></p>
+        <p><%= x.venue %></p>
+        <p><%= x.start_time %> - <%= x.end_time %> PM</p>
+        <p><%= x.address %></p>
+      </div>
     <% end %>
   </div>
 
