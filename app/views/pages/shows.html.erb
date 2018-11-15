@@ -31,7 +31,7 @@
     <% @events = Event.all %>
     <% @events.each do |x| %>
       <div class="one_event">
-        <p><%= x.date.strftime('%B %d')%> --- <%= x.date.strftime('%A')%></p>
+        <p><%= x.date.strftime('%B %d, %Y')%> --- <%= x.date.strftime('%A')%></p>
         <p><%= x.venue %></p>
         <p><%= x.start_time %> - <%= x.end_time %> PM</p>
         <p><%= x.address %></p>
