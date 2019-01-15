@@ -1,5 +1,8 @@
 // Overall style applied to all pages
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 h1, h2, h3, h4, p {
   color: lightgrey;
   font-family: "Alegreya Sans SC";
@@ -18,6 +21,10 @@ body { background-color: black; }
   height: 20%;
   width: 100%;
 }
+
+// .header img {
+//   min-width: 100vw;
+// }
 
 .icons_sidebar {
   margin-top: 2%;
