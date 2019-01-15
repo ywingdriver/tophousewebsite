@@ -17,6 +17,14 @@
     position: relative;
     border: solid black 5px;
     transition-timing-function: ease-in-and-out;
+    vertical-align: middle;
+    display: inline-block;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .individual_pic {
+    height: 100%;
+    width: 100%;
   }
 
   img {
@@ -41,9 +49,10 @@
 
   .homepage_link_word {
     position: absolute;
-    top: 95px;
-    left: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
+    text-align: center;
   }
 }
-
