@@ -1,67 +1,70 @@
 <div class="homepage_container">
+
   <div class="header">
     <%= link_to root_path do %>
       <%= image_tag("TopHouse_Title.png")  %>
     <% end %>
   </div>
+
   <div class="animate_ele">
 
-  <div class="announcement">
-    <h1>Listen to the brand new single "Sirens" below</h1>
-  </div>
-
-
-  <!-- <div class="store">
-    <%= link_to("https://fargoteez.com/collections/tophouse-the-band-official-merchandise", target: :_blank) do %>
-    <p>Store</p>
-  <% end %>
-  </div> -->
+    <div class="announcement">
+      <h1>Listen to the brand new single "Sirens" below</h1>
+    </div>
 
     <div class="homepage_body">
 
-  <div class="homepage_body container-fluid">
-    <div class="row" style="text-align:center;">
-      <%= link_to music_path, class: "pics col-lg-4" do %>
-        <div class="imagediv">
-          <div class="homepage_link_word">
-            <h1>Music</h1>
-          </div>
-          <%= image_tag("TopHouse_Jesse.png", :class => "individual_pic")  %>
-        </div>
-      <% end %>
+      <div class="homepage_body container-fluid">
+        <div class="row" style="text-align:center;">
+          <%= link_to music_path, class: "pics col-lg-4" do %>
+            <div class="imagediv">
+              <div class="homepage_link_word">
+                <h1>Music</h1>
+              </div>
+              <%= image_tag("TopHouse_Jesse.png", :class => "individual_pic")  %>
+            </div>
+          <% end %>
 
-      <%= link_to shows_path, class: "pics col-lg-4" do  %>
-        <div class="imagediv">
-          <div class="homepage_link_word">
-            <h1>Shows</h1>
-          </div>
-          <%= image_tag("TopHouse_Joe.png", :class => "individual_pic") %>
-        </div>
-      <% end %>
+          <%= link_to shows_path, class: "pics col-lg-4" do  %>
+            <div class="imagediv">
+              <div class="homepage_link_word">
+                <h1>Shows</h1>
+              </div>
+              <%= image_tag("TopHouse_Joe.png", :class => "individual_pic") %>
+            </div>
+          <% end %>
 
-      <%= link_to about_path, class: "pics col-lg-4" do  %>
-        <div class="imagediv">
-          <div class="homepage_link_word">
-          <h1>About</h1>
-          </div>
-          <%= image_tag("TopHouse_William.png", :class => "individual_pic")  %>
+          <%= link_to about_path, class: "pics col-lg-4" do  %>
+            <div class="imagediv">
+              <div class="homepage_link_word">
+              <h1>About</h1>
+              </div>
+              <%= image_tag("TopHouse_William.png", :class => "individual_pic")  %>
+            </div>
+          <% end %>
+
+          <%= link_to("https://fargoteez.com/collections/tophouse-the-band-official-merchandise", target: :_blank, class: "pics col-lg-4") do  %>
+            <div class="imagediv">
+              <div class="homepage_link_word">
+              <h1>Store</h1>
+              </div>
+              <%= image_tag("TopHouse_All.jpg", :class => "individual_pic")  %>
+            </div>
+          <% end %>
         </div>
-      <% end %>
+      </div>
     </div>
 
-  </div>
-</div>
 
+    <div class=space_maker></div>
 
-  <div class=space_maker></div>
-
-  <div class="news">
-    <div class="centered_content">
-      <iframe src="https://open.spotify.com/embed/track/6QSErxIbxWE098YmvEuAwM" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <div class="news">
+      <div class="centered_content">
+        <iframe src="https://open.spotify.com/embed/track/6QSErxIbxWE098YmvEuAwM" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <h2>Available everywhere</h2>
     </div>
-    <h2>Available everywhere</h2>
-  </div>
 
-  <div class="space_maker"></div>
-</div>
+    <div class="space_maker"></div>
+  </div>
 </div>
