@@ -1,47 +1,54 @@
 <div class="show_page_container">
+
   <div class="header">
     <%= link_to root_path do %>
-    <%= image_tag("TopHouse_Title.png") %>
-  <% end %>
-</div>
-<div class="animate_ele">
-  <div class="icons_sidebar">
-    <%= link_to('https://www.youtube.com/channel/UC65VqSfrkeu5EgZKqhiqvgQ', target: :_blank) do %>
-    <%= fa_icon "youtube" %>
-  <% end %>
+      <%= image_tag("TopHouse_Title.png") %>
+    <% end %>
+  </div>
 
-  <%= link_to('https://www.facebook.com/tophousetheband/', target: :_blank) do %>
-  <%= fa_icon "facebook-square" %>
-<% end %>
+  <div class="animate_ele">
 
-<%= link_to('https://www.instagram.com/tophousetheband/?hl=en', target: :_blank) do %>
-<%= fa_icon "instagram" %>
-<% end %>
+    <div class="icons_sidebar">
+      <%= link_to('https://www.youtube.com/channel/UC65VqSfrkeu5EgZKqhiqvgQ', target: :_blank) do %>
+      <%= fa_icon "youtube" %>
+    <% end %>
 
-<%= link_to('https://twitter.com/tophousetheband', target: :_blank) do %>
-<%= fa_icon "twitter" %>
-<% end %>
-</div>
+    <%= link_to('https://www.facebook.com/tophousetheband/', target: :_blank) do %>
+    <%= fa_icon "facebook-square" %>
+    <% end %>
 
-<div class="centered_content">
-<h1 id="subtitle">Shows</h1>
-</div>
+    <%= link_to('https://www.instagram.com/tophousetheband/?hl=en', target: :_blank) do %>
+      <%= fa_icon "instagram" %>
+    <% end %>
 
-<div class="all_shows">
-<% @events = Event.all %>
-<% @events.each do |x| %>
-<div class="one_event">
-  <p><%= x.date.strftime('%B %d')%>
-    ---
-    <%= x.date.strftime('%A')%></p>
-  <p><%= x.venue %></p>
-  <p><%= x.start_time %>
-    -
-    <%= x.end_time %>
-    PM</p>
-  <p><%= x.address %></p>
-</div>
-<% end %>
-</div>
-</div>
+    <%= link_to('https://twitter.com/tophousetheband', target: :_blank) do %>
+      <%= fa_icon "twitter" %>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="centered_content">
+    <h1 id="subtitle">Shows</h1>
+  </div>
+
+  <div class="no_shows_yet">
+    <h1>2019 Schedule Coming Soon...</h1>
+  </div>
+
+  <div class="all_shows">
+    <% @events = Event.all %>
+    <% @events.each do |x| %>
+    <div class="one_event">
+      <p><%= x.date.strftime('%B %d')%>
+        ---
+      <%= x.date.strftime('%A')%></p>
+      <p><%= x.venue %></p>
+      <p><%= x.start_time %>
+        -
+      <%= x.end_time %>
+      PM</p>
+      <p><%= x.address %></p>
+    </div>
+    <% end %>
+  </div>
 </div>
