@@ -7,6 +7,25 @@
   }
 }
 
+.announcement {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+.store {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  a {
+    text-decoration: none;
+  }
+}
+
 .homepage_body {
   display: flex;
   justify-content: center;
@@ -56,3 +75,13 @@
     text-align: center;
   }
 }
+
+.news {
+  text-align: center;
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+
