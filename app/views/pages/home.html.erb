@@ -21,7 +21,7 @@
 
   <div class="homepage_body container-fluid">
     <div class="row" style="text-align:center;">
-      <%= link_to music_path, class: "pics col-lg-4" do %>
+      <%= link_to music_path, class: "pics col-lg-auto" do %>
         <div class="imagediv">
           <div class="homepage_link_word">
             <h1>Music</h1>
@@ -30,7 +30,7 @@
         </div>
       <% end %>
 
-      <%= link_to shows_path, class: "pics col-lg-4" do  %>
+      <%= link_to shows_path, class: "pics col-lg-auto" do  %>
         <div class="imagediv">
           <div class="homepage_link_word">
             <h1>Shows</h1>
@@ -39,7 +39,7 @@
         </div>
       <% end %>
 
-      <%= link_to about_path, class: "pics col-lg-4" do  %>
+      <%= link_to about_path, class: "pics col-lg-auto" do  %>
         <div class="imagediv">
           <div class="homepage_link_word">
           <h1>About</h1>
@@ -47,6 +47,16 @@
           <%= image_tag("TopHouse_William.png", :class => "individual_pic")  %>
         </div>
       <% end %>
+
+      <%= link_to contact_path, class: "pics col-lg-auto" do  %>
+        <div class="imagediv">
+          <div class="homepage_link_word">
+          <h1>About</h1>
+          </div>
+          <%= image_tag("TopHouse_Contact.png", :class => "individual_pic")  %>
+        </div>
+      <% end %>
+
     </div>
 
   </div>
