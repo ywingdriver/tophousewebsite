@@ -32,10 +32,13 @@
   </div>
 
   <div class="no_shows_yet">
-    <h1>2019 Schedule Coming Soon...</h1>
+    <h1>Find all of our public events on Facebook</h1>
+    <%= link_to('https://www.facebook.com/tophousetheband', target: :_blank) do  %>
+      <h1>HERE</h1>
+    <% end %>
   </div>
 
-  <div class="all_shows">
+  <!-- <div class="all_shows">
     <% @events = Event.all %>
     <% @events.each do |x| %>
     <div class="one_event">
@@ -50,5 +53,5 @@
       <p><%= x.address %></p>
     </div>
     <% end %>
-  </div>
+  </div> -->
 </div>
