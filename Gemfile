@@ -68,6 +68,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # William adds bootstrap
 
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'bootstrap', '~> 4.2.1'
 gem 'autoprefixer-rails'
